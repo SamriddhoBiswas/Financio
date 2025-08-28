@@ -1,9 +1,7 @@
 <h1 align="center">💲Financio💲</h1>
 
 ![image](public/logo.png)
-# Full Stack Financial Management App with Next JS, React, Tailwind CSS, Prisma, PostgreSQL, Clerk, Shadcn UI
-**Financio** is an AI-powered financial management platform that helps you track, analyze, and optimize your spending with real-time insights. Built with [Next.js](https://nextjs.org), Prisma, Clerk authentication, and Tailwind CSS, Financio provides a modern, responsive, and secure experience for managing your finances.
-
+A finance management platform that lets users securly track expenses, plan budgets, manage multiple accounts with AI-powered receipt scanning, automated recommendations, and a user-friendly interface.
 ---
 
 ## 🚀 Features
@@ -30,6 +28,8 @@
 -   **Luciide React** for Icons and **next-themes** for theme toggle
 
 ---
+
+![image](public/financio_landing.jpeg)
 
 ## ⚡ Getting Started
 
@@ -120,30 +120,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 
 ---
 
-
-
-## Customization
-
-- **Logo:** Place your `logo.png` in the `public/` directory to update the branding.
-- **Theme:** Easily toggle between light and dark mode using the theme switcher in the header.
-- **Database:** Update your Prisma schema in `prisma/schema.prisma` as needed and run migrations.
-
----
-
-## Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Prisma Documentation](https://www.prisma.io/docs/)
-- [Clerk Documentation](https://clerk.com/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Fork this repo and submit a pull request.
 
-**2025 ©️ Samriddho Biswas**
+---
+
+<h3 align="center">2025 ©️ Samriddho Biswas</h3>
 
 
-![image](public/financio_landing.jpeg)
+
