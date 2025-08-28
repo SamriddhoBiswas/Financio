@@ -18,7 +18,7 @@ const Header = async () => {
                         alt="Financio Logo"
                         width={200}
                         height={60}
-                        className="h-12 w-auto object-contain"
+                        className="h-12 w-auto object-contain rounded-lg"
                     />
                 </Link>
 
