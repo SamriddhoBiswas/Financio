@@ -9,6 +9,7 @@ import {
   SignedOut,
   UserButton,
 } from '@clerk/nextjs'
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body className={`${inter.className}`}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           <main className="min-h-screen">{children}</main>
           <footer className="bg-blue-50 py-12">
@@ -29,6 +31,7 @@ export default function RootLayout({ children }) {
               <p>2025 ©️ Samriddho Biswas</p>
             </div>
           </footer>
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
