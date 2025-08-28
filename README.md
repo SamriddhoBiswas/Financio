@@ -1,24 +1,37 @@
-# Financio
+<h1 align="center">💲Financio💲</h1>
 
+![image](public/logo.png)
+# Full Stack Financial Management App with Next JS, React, Tailwind CSS, Prisma, PostgreSQL, Clerk, Shadcn UI
 **Financio** is an AI-powered financial management platform that helps you track, analyze, and optimize your spending with real-time insights. Built with [Next.js](https://nextjs.org), Prisma, Clerk authentication, and Tailwind CSS, Financio provides a modern, responsive, and secure experience for managing your finances.
 
 ---
 
-## Features
-
-- **AI-Powered Analytics:** Get detailed insights into your spending patterns.
-- **Smart Receipt Scanner:** Extract data automatically from receipts using advanced AI technology.
-- **Budget Planning:** Create and manage budgets with intelligent recommendations.
-- **Multi-Account Support:** Manage multiple accounts and credit cards in one place.
-- **Multi-Currency:** Support for multiple currencies with real-time conversion.
-- **Automated Insights:** Receive automated financial insights and recommendations.
-- **User Authentication:** Secure sign-up, login, and user management with Clerk.
-- **Theme Toggle:** Switch between light and dark mode for a personalized experience.
-- **Responsive Design:** Fully responsive UI for desktop and mobile devices.
+## 🚀 Features
+-   **Expense Tracking:** Log and categorize expenses with ease.
+-   **Budget Planning:** Create and manage monthly/weekly budgets.
+-   **Multi-Account Support:** Manage multiple accounts in one place.
+-   **Spending Insights:** Visualize spending trends and analyze
+    patterns.
+-   **AI-Powered Receipt Scanning:** Automatically extract and log
+    transaction details from receipts.
+-   **Automated Insights:** Receive automated financial insights and recommendations.
+-   **User Authentication:** Secure sign-up, login, and user management with Clerk.
+-   **Responsive UI:** Built with Tailwind CSS and Shadcn UI.
 
 ---
 
-## Getting Started
+## 🛠 Tech Stack
+
+-   **Next.js (App Router)**
+-   **Clerk** for authentication and organization membership
+-   **Prisma** with a **Supabase** database
+-   **React** (client components) and server actions
+-   **Tailwind CSS** and **Shadcn UI** for styling
+-   **Luciide React** for Icons and **next-themes** for theme toggle
+
+---
+
+## ⚡ Getting Started
 
 ### 1. Clone the repository
 
@@ -40,10 +53,13 @@ yarn install
 Create a `.env` file in the root directory and add the following (update with your own values):
 
 ```env
-DATABASE_URL=your_postgres_connection_string
-DIRECT_URL=your_postgres_direct_connection_string
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY = your_clerk_publishable_key
+CLERK_SECRET_KEY = your_clerk_secret_key
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=sign-up
+DATABASE_URL= Connect to Supabase via connection pooling
+DIRECT_URL= Direct connection to the database. Used for migrations
+ARCJET_KEY = your_arcjet_key
 ```
 
 ### 4. Set up the database
@@ -67,18 +83,30 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
-```
-├── app/                # Next.js app directory (pages, layouts, etc.)
-├── components/         # Reusable React components (Header, Hero, ThemeToggle, etc.)
-├── lib/                # Utility libraries (Prisma client, user helpers)
-├── prisma/             # Prisma schema and migrations
-├── public/             # Static assets (logo.png, images)
-├── styles/             # Global and component styles
-├── tailwind.config.js  # Tailwind CSS configuration
-└── package.json        # Project metadata and scripts
-```
+    FINANCIO/
+    │── .next/               # Next.js build output
+    │── actions/             # Server actions
+    │── app/                 # App router pages and layouts
+    │── components/          # Reusable React components
+    │── data/                # Static or seeded data
+    │── hooks/               # Custom React hooks
+    │── lib/                 # Utility functions and helpers
+    │── node_modules/        # Dependencies
+    │── prisma/              # Prisma schema and migrations
+    │── public/              # Public assets (images, icons, etc.)
+    │── .env                 # Environment variables
+    │── .gitignore
+    │── components.json      # Shadcn UI config
+    │── eslint.config.mjs    # ESLint configuration
+    │── jsconfig.json        # Path aliases
+    │── middleware.js        # Middleware for authentication/redirects
+    │── next.config.mjs      # Next.js configuration
+    │── package.json         # Project metadata and scripts
+    │── package-lock.json    # Dependency lock file
+    │── postcss.config.mjs   # PostCSS configuration
+    │── README.md            # Project documentation
 
 ---
 
@@ -92,18 +120,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 
 ---
 
-## Technologies Used
 
-- [Next.js](https://nextjs.org/)
-- [React](https://react.dev/)
-- [Prisma](https://www.prisma.io/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [Clerk](https://clerk.com/) (Authentication)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [next-themes](https://github.com/pacocoursey/next-themes) (Theme toggle)
-- [Lucide React](https://lucide.dev/) (Icons)
-
----
 
 ## Customization
 
@@ -122,11 +139,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 
 ---
 
-## License
+## 🤝 Contributing
 
-This project is licensed under the MIT License.
-
----
+Contributions are welcome! Fork this repo and submit a pull request.
 
 **2025 ©️ Samriddho Biswas**
 
